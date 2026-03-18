@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Destined to Be – Numerology Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+
+  <!-- Correct stylesheet path -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
+</head>
+
+<body class="landing-body" data-page="landing">
+
+  <!-- PAGE FLIP INTRO -->
+  <div id="pageflip-sequence"></div>
+
+  <!-- LANDING CONTENT -->
+  <div class="landing-container">
+    <header class="landing-header">
+      <h1 class="landing-title">Destined to Be</h1>
+      <p class="landing-subtitle">Midnight numerology with a live Spirit Guide.</p>
+    </header>
+
+    <section class="landing-actions">
+      <a href="login.html" class="btn primary-btn">Login</a>
+      <a href="signup.html" class="btn secondary-btn">Create Account</a>
+      <a href="sacred-geometry.html" class="btn secondary-btn">Sacred Geometry</a>
+    </section>
+
+    <section class="landing-info">
+      <div class="info-card">
+        <h3>Free Tier Includes</h3>
+        <ul>
+          <li>Life Path & Birthday Numbers</li>
+          <li>Daily Tip</li>
+          <li>Basic Spirit Guide</li>
+          <li>Repeating Number Interpretation</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Pro Tier ($6 One-Time)</h3>
+        <ul>
+          <li>Full Numerology Engine (30+ calculations)</li>
+          <li>Advanced Readings & Destiny Map</li>
+          <li>Personal Year, Month & Day</li>
+          <li>Karmic Lessons, Pinnacles, Challenges</li>
+          <li>Planes, Intensity, Shadow, Master Numbers</li>
+          <li>Address, Business & Project Name Numerology</li>
+          <li>Full Spirit Guide Intelligence</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Sacred Geometry</h3>
+        <ul>
+          <li>Core shapes & their meanings</li>
+          <li>Numbers 1–9 as geometric symbols</li>
+          <li>Your personal geometry signature</li>
+          <li>How geometry influences your chart</li>
+          <li>Meditation & visualization techniques</li>
+          <li>Emoji-style numerology symbols</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="landing-footer">
+      <p>Stored locally. No servers. Your map stays on your device.</p>
+      <p>Upgrade anytime for a one-time $6 unlock.</p>
+    </footer>
+  </div>
+
+  <!-- UI REVEAL AFTER FLIP -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => document.body.classList.add("ui-ready"), 2200);
+    });
+  </script>
+
+</body>
+</html>
