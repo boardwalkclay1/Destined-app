@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – Destined to Be</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/icon-192.png">
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Dashboard logic -->
+  <script type="module" src="js/dashboard/dashboard.js"></script>
+</head>
+
+<!-- PAGE IDENTIFIER FOR BACKGROUND -->
+<body class="app-body" data-page="dashboard">
+
+  <!-- PAGE FLIP INTRO -->
+  <div id="pageflip-sequence"></div>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <h2>Destined to Be</h2>
+      <span class="subhead">Dashboard</span>
+    </div>
+
+    <div class="topbar-right">
+      <span id="tier-pill" class="tier-pill">Free</span>
+      <button data-nav="settings.html" class="icon-btn">⚙</button>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="content dashboard-grid">
+
+    <!-- READINGS -->
+    <section class="card">
+      <h3>Readings</h3>
+      <div class="link-grid">
+        <button data-nav="number.html" class="secondary-btn">My Numbers</button>
+        <button data-nav="spirit.html" class="primary-btn">Spirit Guide</button>
+        <button data-nav="daily_energy.html" class="secondary-btn">Daily Energy</button>
+        <button data-nav="compatibility.html" class="secondary-btn">Compatibility</button>
+        <button data-nav="meanings.html" class="secondary-btn">Meanings</button>
+        <button data-nav="reading.html" class="secondary-btn">Full Readings</button>
+
+        <!-- NEW Sacred Geometry Button -->
+        <button data-nav="sacred-geometry.html" class="secondary-btn">Sacred Geometry</button>
+      </div>
+    </section>
+
+    <!-- TOOLS -->
+    <section class="card">
+      <h3>Tools</h3>
+      <div class="link-grid">
+        <button data-nav="journal.html" class="secondary-btn">Journal</button>
+        <button data-nav="pattern-tracker.html" class="secondary-btn">Patterns</button>
+        <button data-nav="cycles-calendar.html" class="secondary-btn">Cycles</button>
+        <button data-nav="vibration-tools.html" class="secondary-btn">Vibration Tools</button>
+      </div>
+    </section>
+
+    <!-- ACCOUNT -->
+    <section class="card">
+      <h3>Account</h3>
+      <div class="link-grid">
+        <button data-nav="account.html" class="secondary-btn">Account</button>
+        <button data-nav="restore.html" class="secondary-btn">Restore</button>
+        <button data-nav="upgrade.html" class="primary-btn">Upgrade</button>
+        <button data-nav="settings.html" class="secondary-btn">Settings</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-nav">
+    <button data-nav="dashboard.html">Dashboard</button>
+    <button data-nav="number.html">Numbers</button>
+    <button data-nav="spirit.html">Spirit</button>
+    <button data-nav="reading.html">Readings</button>
+    <button data-nav="settings.html">Settings</button>
+  </footer>
+
+  <!-- UI REVEAL AFTER FLIP -->
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => document.body.classList.add("ui-ready"), 2200);
+    });
+  </script>
+
+</body>
+</html>
